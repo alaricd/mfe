@@ -1,0 +1,39 @@
+.flights-container {
+  padding: 20px;
+  border: 4px dashed #ff4081;
+  border-radius: 8px;
+  background-color: #fff0f5;
+  margin-top: 20px;
+}
+
+h2 {
+  color: #c2185b;
+  margin-top: 0;
+}
+
+.flights-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  background: white;
+}
+
+.flights-table th, .flights-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.flights-table th {
+  background-color: #f8f8f8;
+}
+
+.status {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 0.8em;
+}
+
+.on-time { background-color: #c8e6c9; color: #2e7d32; }
+.delayed { background-color: #ffcdd2; color: #c62828; }

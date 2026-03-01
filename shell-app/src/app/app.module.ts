@@ -12,13 +12,13 @@ import { FooterComponent } from './footer/footer.component';
   declarations: [
     AppComponent,
     HomeComponent,
-    NotFoundComponent,
-    HeaderComponent,
-    FooterComponent
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HeaderComponent,
+    FooterComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

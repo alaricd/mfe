@@ -14,9 +14,15 @@ const routes: Routes = [
     path: 'flights',
     loadComponent: () =>
       loadRemoteModule({
-  remoteName: 'remote-1', exposedModule: './Flights'}).then((m) => {
-        // debugger;
-        return m.FlightsComponent}),
+  remoteName: 'remote-1', exposedModule: './Flights'})
+      .then((m) => {
+        console.log('Remote module loaded successfully');
+        return m.FlightsComponent;
+      })
+      .catch((err) => {
+        console.error('Error loading remote module:', err);
+        throw err;
+      }),
   },
 
   {
